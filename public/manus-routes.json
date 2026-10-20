@@ -1,0 +1,1 @@
+{"routes":[{"path":"/","title":"LuxeWear — Home"},{"path":"/shop","title":"Shop LuxeWear"},{"path":"/product/:id","title":"Product detail"},{"path":"/wishlist","title":"Wishlist"},{"path":"/cart","title":"Shopping bag"},{"path":"/checkout","title":"Checkout"},{"path":"/order-success/:id","title":"Order confirmed"},{"path":"/account","title":"My account"}]}
