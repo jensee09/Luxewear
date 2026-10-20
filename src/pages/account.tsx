@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { ArrowRight, Check, Clock3, Heart, LogOut, PackageCheck, Sparkles, Truck, UserRound } from 'lucide-react';
+import { ArrowRight, Check, Clock3, Heart, PackageCheck, Pencil, Sparkles, Truck, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { findProduct, useStore } from '../store/use-store';
 import { Button } from '../components/ui';
@@ -50,7 +50,7 @@ export function AccountPage() {
           </div> : <>
             <h2>{user?.name}</h2>
             <p>{user?.email}</p>
-            <button className="edit-profile" onClick={() => setEditing(true)}>Edit your details <ArrowRight /></button>
+            <button className="edit-profile" onClick={() => setEditing(true)} aria-label="Edit your details" title="Edit your details"><Pencil /></button>
           </>}
           <div className="account-badges">
             <span><PackageCheck /> {orders.length} orders</span>
@@ -63,7 +63,6 @@ export function AccountPage() {
           <p>A human can help with that.</p>
           <a href="mailto:hello@luxewear.example">Drop us a note <ArrowRight /></a>
         </div>
-        <button className="mock-signout" onClick={() => setUser('Avery Morgan', 'avery@example.com')}><LogOut /> Reset demo profile</button>
       </aside>
 
       <section className="account-orders">

@@ -65,11 +65,11 @@ export function HomePage() {
       </motion.div>)}</div>
     </section>
 
-    <section className="ring-section"><div className="ring-section-top page-gutter"><span className="eyebrow">A 360° LITTLE MOODBOARD</span><Link to="/shop" className="text-link">Shop the full collection <ArrowRight /></Link></div>
+    <section className="ring-section"><div className="ring-section-top page-gutter"><Link to="/shop" className="text-link">Shop the full collection <ArrowRight /></Link></div>
       <div className="ring-stage"><div className="ring-glow"/><div className="collection-ring" aria-label="Rotating collection preview">{wheelItems.map((item, index) => <Link className="ring-item" to={`/product/${item.id}`} key={item.id} style={{ '--i': index } as React.CSSProperties}><img src={item.image} alt={item.title} loading="lazy" /><span>{item.title}</span></Link>)}</div>
         <div className="ring-center"><span className="eyebrow">THIS SEASON, ON REPEAT</span><h2>Find your<br /><em>own orbit.</em></h2><Link to="/shop" className="ring-center-link">See what moves you <ArrowRight /></Link></div>
       </div>
-      <div className="ring-footer page-gutter"><span><i className="ring-dot" /> TAP ANY PIECE TO MAKE IT YOURS</span><span>01 — 08 <ChevronLeft /><ChevronRight /></span></div>
+      <div className="ring-footer page-gutter"><span><i className="ring-dot" /> TAP ANY PIECE TO MAKE IT YOURS</span></div>
     </section>
 
     <section ref={storyRef} className="story-section page-gutter"><div className="story-visual">
