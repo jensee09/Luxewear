@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import { ArrowRight, Check, Clock3, Heart, PackageCheck, Pencil, Sparkles, Truck, UserRound } from 'lucide-react';
+import { ArrowRight, Check, Clock3, Heart, PackageCheck, Sparkles, Truck, UserRound } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { findProduct, useStore } from '../store/use-store';
 import { Button } from '../components/ui';
@@ -16,18 +15,6 @@ export function AccountPage() {
   const user = useStore((state) => state.user);
   const orders = useStore((state) => state.orders);
   const wishlist = useStore((state) => state.wishlist);
-  const setUser = useStore((state) => state.setUser);
-  const [editing, setEditing] = useState(false);
-  const [name, setName] = useState(user?.name ?? '');
-  const [email, setEmail] = useState(user?.email ?? '');
-
-  const save = () => {
-    if (name.trim() && email.includes('@')) {
-      setUser(name.trim(), email.trim());
-      setEditing(false);
-    }
-  };
-
   return <div className="account-page page-gutter">
     <div className="account-top">
       <div>
@@ -43,15 +30,8 @@ export function AccountPage() {
         <div className="account-user-card">
           <div className="account-avatar"><UserRound /></div>
           <span className="eyebrow">YOUR LUXEWEAR CORNER</span>
-          {editing ? <div className="account-edit">
-            <label>Name<input value={name} onChange={(event) => setName(event.target.value)} /></label>
-            <label>Email<input type="email" value={email} onChange={(event) => setEmail(event.target.value)} /></label>
-            <button onClick={save}>Save changes <ArrowRight /></button>
-          </div> : <>
-            <h2>{user?.name}</h2>
-            <p>{user?.email}</p>
-            <button className="edit-profile" onClick={() => setEditing(true)} aria-label="Edit your details" title="Edit your details"><Pencil /></button>
-          </>}
+          <h2>{user?.name}</h2>
+          <p>{user?.email}</p>
           <div className="account-badges">
             <span><PackageCheck /> {orders.length} orders</span>
             <span><Heart /> {wishlist.length} saved</span>

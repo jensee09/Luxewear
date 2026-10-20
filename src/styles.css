@@ -576,16 +576,9 @@ h1, h2, h3 { text-wrap: balance; }
 .account-user-card > .eyebrow { font-size: 9px; }
 .account-user-card h2 { margin: 8px 0 3px; font-family: var(--display); font-size: 24px; font-weight: 500; }
 .account-user-card > p { margin: 0; color: var(--subtle); font-size: 12px; }
-.edit-profile { display: inline-grid; width: 30px; height: 30px; place-items: center; margin-top: 8px; padding: 0; border: 1px solid var(--line); border-radius: 50%; background: var(--soft); color: var(--orchid); cursor: pointer; }
-.edit-profile svg { width: 13px; height: 13px; }
 .account-badges { display: flex; gap: 7px; margin-top: 15px; padding-top: 13px; border-top: 1px solid var(--line); }
 .account-badges span { display: flex; align-items: center; gap: 5px; padding: 7px 9px; border-radius: 30px; background: var(--soft); color: var(--subtle); font-size: 10px; }
 .account-badges svg { width: 12px; height: 12px; color: var(--orchid); }
-.account-edit { display: grid; gap: 8px; margin-top: 12px; }
-.account-edit label { display: grid; gap: 4px; color: var(--subtle); font-size: 10px; }
-.account-edit input { min-height: 33px; padding: 0 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface-solid); color: var(--ink); font-size: 12px; }
-.account-edit button { display: flex; align-items: center; justify-content: space-between; margin-top: 4px; padding: 9px 10px; border: 0; border-radius: 20px; background: #8e1ea2; color: white; cursor: pointer; font-size: 12px; }
-.account-edit button svg { width: 12px; height: 12px; }
 .account-help { margin-top: 13px; padding: 17px; border-radius: 13px; background: linear-gradient(135deg, #f2d4e9, #f9e7f2); color: #3a1440; }
 .account-help > span { color: #a03b9f; font-size: 17px; }
 .account-help b { display: block; margin-top: 6px; font-family: var(--display); font-size: 19px; font-weight: 500; }

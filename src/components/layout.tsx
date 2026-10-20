@@ -101,9 +101,9 @@ export function Header() {
 
 export function Footer() {
   return <footer className="site-footer"><div className="footer-glow footer-glow--one" /><div className="footer-glow footer-glow--two" />
-    <div className="footer-top"><div className="footer-brand"><BrandMark /><p>For the way you are. And the way you’re becoming.</p><div className="social-row"><a href="https://www.instagram.com/" aria-label="Instagram">ig</a><a href="https://www.pinterest.com/" aria-label="Pinterest">p</a><a href="https://www.tiktok.com/" aria-label="TikTok">tk</a></div></div>
+    <div className="footer-top"><div className="footer-brand"><BrandMark /><p>For the way you are. And the way you’re becoming.</p></div>
       <div className="footer-column"><h3>Explore</h3><Link to="/shop">Shop everything</Link><Link to="/shop?category=Women">For her</Link><Link to="/shop?category=Men">For him</Link><Link to="/shop?category=Kids">Little ones</Link></div>
-      <div className="footer-column"><h3>The helpful bits</h3><Link to="/account">Your account</Link><Link to="/cart">Your bag</Link><Link to="/checkout">Delivery & payment</Link><a href="mailto:hello@luxewear.example">Say hello</a></div>
+      <div className="footer-column"><h3>The helpful bits</h3><Link to="/account">Your account</Link><Link to="/cart">Your bag</Link><Link to="/checkout">Delivery & payment</Link></div>
       <div className="footer-note"><span className="eyebrow eyebrow--light">THE GOOD TO KNOW</span><h3>Cash at the door.<br />No surprises.</h3><p>Free delivery on orders above ₹999. A real person is always just an email away.</p><Link to="/shop" className="footer-arrow-link">Find your next favourite <ArrowRight /></Link></div>
     </div>
     <div className="footer-bottom"><span>© 2026 LuxeWear Studio. All soft edges reserved.</span><span>Made for real life, with a little extra feeling.</span><Link to="/account">Profile & orders</Link></div>
